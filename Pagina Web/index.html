@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recetas</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <!--ENCABEZADO-->
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>Recetas</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#recetas">
+                                <i class="fa-solid fa-bowl-food"></i>
+                                <span>Recetas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="social">
+                    <a href="tel:+595 0980782795">
+                        <i class="fa-solid fa-phone"></i>
+                        +595 0980782795
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i> 
+                    </a>
+                </div>
+                <div class="nav-responsive" id="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!--CARRUSEL-->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell" >
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/4.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Comidas Exquisitas para el paladar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Leer mas</button>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION DE FORMULARIO-->
+    <section id="formulario">
+        <div class="llenar-formulario">
+            <div class="recetas">
+                <h1>Añadir nueva receta</h1>
+            </div>
+            <div class="formulario">
+                <div class="nombre-receta">
+                    <h3>Nombre de la receta</h3>
+                    <input type="text" cols="50" class="campo-formulario">
+                </div>
+                <div class="ingredientes">
+                    <h3>Ingredientes:</h3>
+                    <textarea cols="50" rows="15" class="campo-formulario"></textarea>
+                </div>
+                <div class="tipo">
+                    <h3>Tipo de receta:</h3>
+                    <select>
+                        <option value="Plato principal">Plato principal</option>
+                        <option value="Sopas y cremas">Sopas y cremas</option>
+                        <option value="Ensaladas">Ensaladas</option>
+                        <option value="Postres">Postres</option>
+                        <option value="Bebidas">Bebidas</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="pasos">
+                <h3>Pasos para la receta:</h3>
+                <textarea cols="75" rows="15" class="campo-formulario"></textarea>
+            </div>
+            <button>Enviar</button>
+        </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>Recetas</h1>
+            </div>
+            <div class="col">
+                <h3>Menu</h3>
+                <a href="#">Inicio</a>
+                <a href="#">Recetas</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="col">
+                <h3>Autores</h3>
+                <a href="#">Andy Abad</a>
+                <a href="#">Erick Verdugo</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> 
+                    <a href="#">Twiter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="#">Instragram</a>
+                </div>
+
+                
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <button class="enviar">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand';
+}
+hmtl{
+    /*Para que se deslixe cuando haga click en una opcion*/
+    scroll-behavior: smooth;
+}
+/*SECCION INICIO*/
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#inicio header{
+    width: 100%;
+}
+#inicio header .contenido-header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+}
+#inicio header .contenido-header nav{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#inicio header .contenido-header nav ul{
+    display: flex;
+    list-style: none;
+}
+#inicio header .contenido-header .logo{
+    color: #ff8f46;
+    font-size: 22px;
+}
+#inicio header .contenido-header nav ul li{
+    text-align: center;
+}
+#inicio header .contenido-header nav ul li i{
+    display: block;
+    color: #a8a8a8;
+    margin: 0 20px;
+}
+#inicio header .contenido-header nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #a8a8a8;
+    margin: 0 20px;
+}
+#inicio header .contenido-header nav ul li:hover i{
+    color:#ff8f46
+}
+#inicio header .contenido-header nav ul li a:hover{
+    color:#ff8f46
+}
+#inicio header .contenido-header .social a{
+    display: inline-block;
+    background-color: #ff8f46;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+#inicio header .contenido-header .social > i{
+    display: inline-block;
+    color: #a8a8a8;
+    margin-left: 10px;
+}
+.nav-responsive{
+    font-size: 25px;
+    color: #a8a8a8;
+    display: none;
+}
+
+
+/*CARRUSEL*/
+#inicio .carrusel{
+    position: relative;
+    height: 100%;
+}
+/*Estilo de la informacion de la pagina*/
+#inicio .carrusel .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+#inicio .carrusel .info h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+}
+/*Estilo del boton de Leer mas*/
+#inicio .carrusel .info button{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*Efecto de cambiar de color del boton leer mas*/
+#inicio .carrusel .info button:hover{
+    background-color:salmon;
+}
+#inicio .gallery{
+    width: 100%;
+    height: 100%;
+}
+#inicio .gallery-cell{
+    width: 100%;
+    margin-right: 10px;
+    height: 100%;
+}
+#inicio .gallery-cell img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+/*Recetas*/
+#menucontenedor .texto-recetas{
+    margin-top: 20px;
+    color: #ff8f46;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Dancing Script';
+}
+#menucontenedor .botones{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #ff8f46;
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#menucontenedor .botones-recetas .botones:hover{
+    background-color:salmon;
+}
+/*Disenio para las recetas*/
+#menucontenedor ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espaciado entre las columnas */
+}
+#menucontenedor ul li{
+    list-style: none;
+}
+#menucontenedor ul li:nth-child(3n){
+    margin-bottom: 40px;
+}
+
+/*Nombre de la receta*/
+#menucontenedor ul li .filtro-recetas .receta h2{
+    margin-top: 25px;
+    color: #ff8f46;
+    font-size: 30px;
+}
+/*INGREDIENTES*/
+#menucontenedor ul li .filtro-recetas .receta .descripcion .texto-ingredientes{
+    font-weight: bold;
+}
+#menucontenedor ul li .filtro-recetas .receta .descripcion .texto-preparacion{
+    font-weight: bold;
+}
+
+
+/*ENVIAR RECETA*/
+#formulario{
+    background-color: #ff8f46;
+    margin: 25px 25px 25px 25px;
+    padding: 0 25px;
+    border-radius: 30px;
+}
+#formulario .llenar-formulario .recetas h1{
+    padding: 25px 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+#formulario .campo-formulario {
+    width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/*SECCION CONTACTO*/
+#contacto{
+    background-color: #ff8f46;
+    padding: 25px 0 25px 0 ;
+}
+#contacto .fila{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+#contacto a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    margin-bottom: 3px;
+}
+#contacto a:hover{
+    text-decoration: underline;
+}
+#contacto h3{
+    margin-bottom: 12px;
+}
+#contacto .media{
+    display: flex;
+    align-items: center;
+}
+#contacto .media i{
+    display: block;
+    margin-right: 10px;
+}
+#contacto input{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 30px;
+}
+#contacto .fila .enviar{
+    border: none;
+    background-color:#fff;
+    color:#a8a8a8;
+    width: fit-content;
+    margin-top: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+/*SECCION RESPONSIVE*/
+@media screen and (max-width:1070px) {
+    #inicio header .contenido-header .social{
+        display: none;
+    }
+    #inicio header .contenido-header nav{
+        position: static;
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width:700px) {
+    #sabores .fila {
+        display: block;
+    }
+    #platos .fila {
+        display: block;
+        width: 100%;
+    }
+    #platos .fila .item {
+        width: 100%;
+    }
+    #inicio header .contenido-header nav {
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+    .nav-responsive {
+        display: block;
+    }
+    #inicio header .contenido-header {
+        padding: 20px;
+    }
+    #inicio header .contenido-header nav.responsive {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        background-color: #252A2E;
+        z-index: 99;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    #contacto .fila {
+        display: block;
+        text-align: center;
+    }
+    #contacto .fila h3 {
+        margin: 20px 0 3px 0;
+    }
+    #contacto .fila .media {
+        display: block;
+    }
+    #contacto .fila input {
+        width: 90%;
+    }
+}
