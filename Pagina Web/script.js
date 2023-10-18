@@ -50,7 +50,7 @@ function agregarReceta() {
 
     // Validar que los campos no estén vacíos
     if (nombreReceta === '' || ingredientes === '' || pasosReceta === '') {
-        alert('Por favor, complete todos los campos.');
+        alert('Por favor, complete los campos.');
         return;  // No continúa si algún campo está vacío
     }
 
