@@ -209,8 +209,8 @@ hmtl{
 #formulario h3{
     margin-bottom: 5%;;
 }
-input[type="text"] {
-    height: 30px;
+#formulario .form #nombre-rec {
+    height: 50px;
 }
 /*Formato de los textArea*/
 #formulario .campo-formulario{
@@ -341,9 +341,15 @@ input[type="text"] {
         display: block !important;
     }
     nav.responsive ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    #inicio header .contenido-header nav ul li .buscador i {
+        margin-top: 20px;
+    } 
     /*Contacto*/
     #contacto .fila {
         display: block;
