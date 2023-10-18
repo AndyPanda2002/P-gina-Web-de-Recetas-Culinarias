@@ -59,6 +59,22 @@ hmtl{
 #inicio header .contenido-header nav ul li a:hover{
     color:#ff8f46
 }
+
+/*Barra de busqueda*/
+#inicio header .contenido-header nav ul li .buscador{
+    display: flex;
+}
+#inicio header .contenido-header nav ul li .buscador #buscadorid{
+    margin-left: 10px;
+    border-radius: 30px;
+    padding: 5px;
+}
+#inicio header .contenido-header nav ul li .buscador i{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
 #inicio header .contenido-header .social a{
     display: inline-block;
     background-color: #ff8f46;
@@ -131,79 +147,104 @@ hmtl{
     object-fit: cover;
 }
 /*Recetas*/
-#menucontenedor .texto-recetas{
-    margin-top: 20px;
-    color: #ff8f46;
-    font-size: 70px;
-    font-weight: bold;
-    font-family: 'Dancing Script';
-}
-#menucontenedor .botones{
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 20px;
-    border: none;
+#recetas{
     background-color: #ff8f46;
+    margin: 0.5% ;
+    border-radius: 10px;
+    padding-bottom: 3%;
+}
+#recetas #texto-recetas{
+    font-size: 40px;
     color: #fff;
-    padding: 7px 25px;
-    border-radius: 30px;
-    cursor: pointer;
+    text-align: center;
 }
-#menucontenedor .botones-recetas .botones:hover{
-    background-color:salmon;
+#recetas .lista{
+    display: flex;
+    flex-wrap: wrap;
 }
-/*Disenio para las recetas*/
-#menucontenedor ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Espaciado entre las columnas */
+#recetas .lista .receta {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    border-radius: 25px;
+    box-sizing: border-box;
 }
-#menucontenedor ul li{
-    list-style: none;
+@media (max-width: 768px) {
+    #recetas .lista .receta {
+        flex: 0 0 calc(100% - 20px);
+    }
 }
-#menucontenedor ul li:nth-child(3n){
-    margin-bottom: 40px;
+#recetas .lista .receta h2{
+    color: firebrick;
+}
+#recetas .lista .receta .texto-negrita{
+    font-weight: bold;
 }
 
-/*Nombre de la receta*/
-#menucontenedor ul li .filtro-recetas .receta h2{
-    margin-top: 25px;
-    color: #ff8f46;
-    font-size: 30px;
-}
-/*INGREDIENTES*/
-#menucontenedor ul li .filtro-recetas .receta .descripcion .texto-ingredientes{
-    font-weight: bold;
-}
-#menucontenedor ul li .filtro-recetas .receta .descripcion .texto-preparacion{
-    font-weight: bold;
-}
 
 
 /*ENVIAR RECETA*/
 #formulario{
     background-color: #ff8f46;
-    margin: 25px 25px 25px 25px;
+    margin: 2% 2% 2% 3%;
     padding: 0 25px;
     border-radius: 30px;
 }
-#formulario .llenar-formulario .recetas h1{
+#formulario .form{
+    display: flex;
+}
+#formulario .form div {
+    flex: 1;
+}
+/*Añadir nueva receta*/
+#formulario h1{
     padding: 25px 0;
     font-size: 30px;
     color: #fff;
     font-weight: bold;
 }
-#formulario .campo-formulario {
-    width: 300px; /* Puedes ajustar el ancho según tus necesidades */
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/*Nombre de la receta*/
+#formulario h3{
+    margin-bottom: 5%;;
+}
+input[type="text"] {
+    height: 30px;
+}
+/*Formato de los textArea*/
+#formulario .campo-formulario{
+    width: 90%;
+    border: none;
+    margin-bottom: 10%;
     box-sizing: border-box;
+    padding: 10px;
+    border-radius: 20px;
+}
+/*Formato del button*/
+#formulario .boton-enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formulario button{
+    font-size: 20px;
+    color:#a8a8a8;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+}
+#formulario button:hover{
+    background-color:#a8a8a8;
+    color: #252A2E;
 }
 
 
 /*SECCION CONTACTO*/
+
 #contacto{
     background-color: #ff8f46;
     padding: 25px 0 25px 0 ;
@@ -241,7 +282,7 @@ hmtl{
     width: 100%;
     border-radius: 30px;
 }
-#contacto .fila .enviar{
+#contacto .fila .col #enviar{
     border: none;
     background-color:#fff;
     color:#a8a8a8;
@@ -285,6 +326,7 @@ hmtl{
     #inicio header .contenido-header {
         padding: 20px;
     }
+    /*Menu responsive*/
     #inicio header .contenido-header nav.responsive {
         display: block;
         position: absolute;
@@ -302,6 +344,7 @@ hmtl{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    /*Contacto*/
     #contacto .fila {
         display: block;
         text-align: center;
